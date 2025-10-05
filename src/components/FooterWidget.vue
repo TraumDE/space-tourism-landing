@@ -70,6 +70,7 @@ const moreOnCosmicTourismLinks = ref<Link[]>([
 .footer {
   display: flex;
   justify-content: space-around;
+  padding-top: 210px;
   padding-bottom: 83px;
 
   &__left {

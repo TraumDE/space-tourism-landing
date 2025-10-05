@@ -5,5 +5,13 @@ import AboutWidget from '@/components/AboutWidget.vue'
 
 <template>
   <HeaderWidhet></HeaderWidhet>
-  <AboutWidget></AboutWidget>
+  <main class="main">
+    <AboutWidget></AboutWidget>
+  </main>
 </template>
+
+<style lang="scss" scoped>
+.main {
+  margin-left: 142px;
+}
+</style>
