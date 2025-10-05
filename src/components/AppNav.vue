@@ -1,13 +1,15 @@
 <script lang="ts" setup>
-import AccentButton from './AccentButton.vue'
-import AppLogoIcon from './icons/AppLogoIcon.vue'
 import { RouterLink } from 'vue-router'
+
+import SearchIcon from './icons/SearchIcon.vue'
+import AccentButton from './AccentButton.vue'
+import LogoIcon from './icons/LogoIcon.vue'
 </script>
 
 <template>
   <nav id="nav" class="nav">
     <RouterLink to="/" class="nav__logo">
-      <AppLogoIcon></AppLogoIcon>
+      <LogoIcon></LogoIcon>
     </RouterLink>
     <div class="nav__main">
       <RouterLink class="nav__link" to="/">Home</RouterLink>
@@ -16,7 +18,7 @@ import { RouterLink } from 'vue-router'
       <RouterLink class="nav__link" to="/">Blog</RouterLink>
       <RouterLink class="nav__link" to="/">About Us</RouterLink>
       <RouterLink class="nav__link" to="/">Contact</RouterLink>
-
+      <SearchIcon role="button" tabindex="0"></SearchIcon>
       <AccentButton>
         <template #text> Book Trip </template>
       </AccentButton>
