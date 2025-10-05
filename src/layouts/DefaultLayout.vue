@@ -1,8 +1,10 @@
 <script lang="ts" setup>
-import AppNav from '@/components/AppNav.vue'
+import NavWidget from '@/components/NavWidget.vue'
+import FooterWidget from '@/components/FooterWidget.vue'
 </script>
 
 <template>
-  <AppNav></AppNav>
+  <NavWidget></NavWidget>
   <slot></slot>
+  <FooterWidget></FooterWidget>
 </template>

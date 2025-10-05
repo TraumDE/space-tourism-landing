@@ -1,16 +1,14 @@
 <script lang="ts" setup>
 import { RouterLink } from 'vue-router'
 
+import AppLogo from './AppLogo.vue'
 import SearchIcon from './icons/SearchIcon.vue'
 import AccentButton from './AccentButton.vue'
-import LogoIcon from './icons/LogoIcon.vue'
 </script>
 
 <template>
   <nav id="nav" class="nav">
-    <RouterLink to="/" class="nav__logo">
-      <LogoIcon></LogoIcon>
-    </RouterLink>
+    <AppLogo></AppLogo>
     <div class="nav__main">
       <RouterLink class="nav__link" to="/">Home</RouterLink>
       <RouterLink class="nav__link" to="/">About</RouterLink>
@@ -27,6 +25,8 @@ import LogoIcon from './icons/LogoIcon.vue'
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/styles/helpers' as *;
+
 .nav {
   padding-top: 24px;
   display: flex;
@@ -41,11 +41,8 @@ import LogoIcon from './icons/LogoIcon.vue'
   }
 
   &__link {
-    font-family: 'Figtree', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--main-font-color);
-    text-decoration: none;
+    @include font($size: 18px, $weight: 600);
+
     transition: text-decoration 0.3s ease-out;
 
     &:hover {

@@ -8,15 +8,15 @@
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/styles/helpers' as *;
+
 .button {
-  font-family: Figtree, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
+  @include font($size: 15px, $weight: 600);
+
   padding-block: 13px;
   padding-inline: 34px;
   border-radius: 50vh;
   border: none;
-  color: var(--main-font-color);
   background: var(--main-gradient);
   transition: box-shadow 0.3s ease-out;
 

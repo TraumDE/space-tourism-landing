@@ -1,0 +1,8 @@
+@mixin font($color: var(--main-font-color), $size: 16px, $weight: 400, $family: 'Figtreee') {
+  color: #{$color};
+  font-size: #{$size};
+  font-weight: #{$weight};
+  font-family:
+    #{$family},
+    sans-serif;
+}
