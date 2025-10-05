@@ -1,0 +1,29 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "overrides": [
+    {
+      "files": ["*.scss", "**/*.scss"],
+      "extends": ["stylelint-config-standard-scss"]
+    },
+    {
+      "files": ["*.vue", "**/*.vue"],
+      "extends": ["stylelint-config-standard-scss", "stylelint-config-standard-vue/scss"]
+    }
+  ],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "no-empty-source": null,
+    "order/order": [
+      "dollar-variables",
+      "custom-properties",
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parametr": "*",
+        "hasBlock": false
+      },
+      "declarations"
+    ],
+    "order/properties-order": ["width", "height"]
+  }
+}
