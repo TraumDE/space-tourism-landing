@@ -16,6 +16,10 @@
   padding-block: 13px;
   padding-inline: 34px;
   border-radius: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
   border: none;
   background: var(--main-gradient);
   transition: box-shadow 0.3s ease-out;

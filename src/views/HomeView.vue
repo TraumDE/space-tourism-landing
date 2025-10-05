@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import HeaderWidhet from '@/components/HeaderWidhet.vue'
+</script>
+
 <template>
-  <h1>1232</h1>
+  <HeaderWidhet></HeaderWidhet>
 </template>
