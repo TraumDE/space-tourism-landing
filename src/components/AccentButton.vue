@@ -9,7 +9,7 @@
 
 <style lang="scss" scoped>
 .button {
-  font-family: 'Figtree';
+  font-family: Figtree, sans-serif;
   font-weight: 600;
   font-size: 15px;
   padding-block: 13px;
@@ -22,10 +22,10 @@
 
   &:hover {
     box-shadow:
-      inset 0 0 30px 0 rgba(255, 255, 255, 0.3),
-      0 20px 30px 0 rgba(64, 100, 228, 0.3),
-      -20px -20px 50px 0 rgba(42, 94, 142, 0.5),
-      10px 20px 80px 0 rgba(122, 33, 237, 0.3);
+      inset 0 0 30px 0 rgb(255 255 255 / 30%),
+      0 20px 30px 0 rgb(64 100 228 / 30%),
+      -20px -20px 50px 0 rgb(42 94 142 / 50%),
+      10px 20px 80px 0 rgb(122 33 237 / 30%);
   }
 }
 </style>
