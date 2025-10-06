@@ -6,8 +6,8 @@ const handleFormSubmit = (): void => {}
 
 <template>
   <section class="book">
-    <h2 class="book__title">Book Your Cosmic Journey Now</h2>
     <form class="book__form">
+      <h2 class="book__title">Book Your Cosmic Journey Now</h2>
       <fieldset class="book__form-fieldset">
         <legend class="book__form-title">Traveler Details:</legend>
         <input
@@ -49,6 +49,10 @@ const handleFormSubmit = (): void => {}
         </AccentButton>
       </fieldset>
     </form>
+
+    <div class="book__moon">
+      <img class="book__moon-image" src="/images/moon.webp" alt="moon image" />
+    </div>
   </section>
 </template>
 
@@ -57,6 +61,9 @@ const handleFormSubmit = (): void => {}
 
 .book {
   padding-top: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
   &__title {
     @include font($size: 40px, $weight: 300);
@@ -100,6 +107,20 @@ const handleFormSubmit = (): void => {}
     height: 90px;
     resize: none;
     border-radius: 35px;
+  }
+
+  &__moon {
+    filter: drop-shadow(0 20px 30px rgba(64, 100, 228, 0.3))
+      drop-shadow(-20px -20px 50px rgba(42, 94, 142, 0.5))
+      drop-shadow(122px 33px 237px rgba(122, 33, 237, 0.3));
+
+    display: flex;
+    align-items: center;
+
+    transition: transform 1.5s ease-out;
+    &:hover {
+      transform: rotate(-45deg);
+    }
   }
 }
 </style>
