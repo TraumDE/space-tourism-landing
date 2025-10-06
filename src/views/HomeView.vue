@@ -2,6 +2,7 @@
 import HeaderWidhet from '@/components/HeaderWidhet.vue'
 import AboutWidget from '@/components/AboutWidget.vue'
 import ProsWidget from '@/components/ProsWidget.vue'
+import BookWidget from '@/components/BookWidget.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import ProsWidget from '@/components/ProsWidget.vue'
   <main class="main">
     <AboutWidget></AboutWidget>
     <ProsWidget></ProsWidget>
+    <BookWidget></BookWidget>
   </main>
 </template>
 
