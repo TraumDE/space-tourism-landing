@@ -7,7 +7,7 @@ const handleFormSubmit = (): void => {}
 <template>
   <section class="book">
     <form class="book__form">
-      <h2 class="book__title">Book Your Cosmic Journey Now</h2>
+      <h2 class="book__title section-title">Book Your Cosmic Journey Now</h2>
       <fieldset class="book__form-fieldset">
         <legend class="book__form-title">Traveler Details:</legend>
         <input
@@ -64,10 +64,6 @@ const handleFormSubmit = (): void => {}
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-  &__title {
-    @include font($size: 40px, $weight: 300);
-  }
 
   &__form-title {
     @include font($size: 17px, $weight: 500);
