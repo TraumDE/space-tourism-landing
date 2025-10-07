@@ -4,6 +4,7 @@ import AboutWidget from '@/components/AboutWidget.vue'
 import ProsWidget from '@/components/ProsWidget.vue'
 import BookWidget from '@/components/BookWidget.vue'
 import GuideWidget from '@/components/GuideWidget.vue'
+import TeamWidget from '@/components/TeamWidget.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import GuideWidget from '@/components/GuideWidget.vue'
   <main class="main">
     <AboutWidget></AboutWidget>
     <ProsWidget></ProsWidget>
+    <TeamWidget></TeamWidget>
     <GuideWidget></GuideWidget>
     <BookWidget></BookWidget>
   </main>

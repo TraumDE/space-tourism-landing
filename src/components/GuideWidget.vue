@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import GuideVideoCard from './GuideVideoCard.vue'
 
-import type { VideoCard } from '@/types/videoCard'
+import type { VideoCard } from '@/types'
 
 const videoCards = ref<VideoCard[]>([
   {
