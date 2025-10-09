@@ -22,7 +22,6 @@
   gap: 13px;
   border: 2px solid var(--accent-color);
   background-color: transparent;
-
   transition: box-shadow 0.3s ease-out;
 }
 </style>

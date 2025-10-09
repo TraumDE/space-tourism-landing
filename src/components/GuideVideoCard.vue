@@ -45,8 +45,7 @@ const props = defineProps<VideoCard>()
     background-repeat: no-repeat;
     background-color: #98989a;
     border-radius: 9px;
-
-    box-shadow: inset 0 -80px 80px 0 #000000;
+    box-shadow: inset 0 -80px 80px 0 #000;
   }
 
   &-play {

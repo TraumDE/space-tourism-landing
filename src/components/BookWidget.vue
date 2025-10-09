@@ -67,6 +67,7 @@ const handleFormSubmit = (): void => {}
 
   &__form-title {
     @include font($size: 17px, $weight: 500);
+
     padding-bottom: 30px;
   }
 
@@ -83,6 +84,8 @@ const handleFormSubmit = (): void => {}
   }
 
   &__input {
+    @include font($size: 16px, $weight: 500);
+
     background-color: transparent;
     outline: none;
     border: 1px solid #aeaeae;
@@ -90,8 +93,6 @@ const handleFormSubmit = (): void => {}
     padding-block: 13px;
     padding-inline: 17px;
     width: 100%;
-
-    @include font($size: 16px, $weight: 500);
 
     &::placeholder {
       @include font(#aeaeae, 16px, 500);
@@ -106,14 +107,13 @@ const handleFormSubmit = (): void => {}
   }
 
   &__moon {
-    filter: drop-shadow(0 20px 30px rgba(64, 100, 228, 0.3))
-      drop-shadow(-20px -20px 50px rgba(42, 94, 142, 0.5))
-      drop-shadow(122px 33px 237px rgba(122, 33, 237, 0.3));
-
+    filter: drop-shadow(0 20px 30px rgb(64 100 228 / 30%))
+      drop-shadow(-20px -20px 50px rgb(42 94 142 / 50%))
+      drop-shadow(122px 33px 237px rgb(122 33 237 / 30%));
     display: flex;
     align-items: center;
-
     transition: transform 1.5s ease-out;
+
     &:hover {
       transform: rotate(-45deg);
     }

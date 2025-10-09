@@ -43,11 +43,7 @@ import AccentButton from './AccentButton.vue'
   &__link {
     @include font($size: 18px, $weight: 600);
 
-    transition: text-decoration 0.3s ease-out;
 
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 </style>

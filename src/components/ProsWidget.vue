@@ -51,12 +51,14 @@ import AstronautIcon from './icons/AstronautIcon.vue'
 
   &__card-title {
     @include font($size: 18px, $weight: 400);
+
     max-width: 163px;
     padding-top: 15px;
   }
 
   &__card-description {
     @include font($size: 12px, $weight: 400);
+
     max-width: 163px;
   }
 
@@ -64,10 +66,10 @@ import AstronautIcon from './icons/AstronautIcon.vue'
     transition: filter 0.3s ease-out;
 
     &:hover {
-      filter: drop-shadow(0 4px 50px rgba(2, 93, 113, 0.7))
-        drop-shadow(0 20px 105.2px rgba(29, 53, 139, 0.6))
-        drop-shadow(-20px -20px 60.2px rgba(42, 94, 142, 0.8))
-        drop-shadow(10px 20px 84px rgba(122, 33, 237, 0.3));
+      filter: drop-shadow(0 4px 50px rgb(2 93 113 / 70%))
+        drop-shadow(0 20px 105.2px rgb(29 53 139 / 60%))
+        drop-shadow(-20px -20px 60.2px rgb(42 94 142 / 80%))
+        drop-shadow(10px 20px 84px rgb(122 33 237 / 30%));
     }
   }
 }

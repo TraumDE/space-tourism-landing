@@ -1,3 +1,5 @@
 export * from './link'
 export * from './team'
 export * from './videoCard'
+export * from './offerCard'
+export * from './time'

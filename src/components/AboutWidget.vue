@@ -41,11 +41,13 @@ import AccentButton from './AccentButton.vue'
 
   &__title {
     @include font($size: 50px, $weight: 300);
+
     padding-bottom: 26px;
   }
 
   &__text {
     @include font($size: 16px, $weight: 400);
+
     max-width: 679px;
     padding-bottom: 36px;
   }
@@ -58,8 +60,7 @@ import AccentButton from './AccentButton.vue'
 
   &__planets {
     position: relative;
-
-    background-color: rgb(255, 11, 11);
+    background-color: rgb(255 11 11);
 
     & * {
       position: absolute;
@@ -73,6 +74,7 @@ import AccentButton from './AccentButton.vue'
         transform: rotate(45deg);
       }
     }
+
     &-planet-2 {
       right: 0;
       transition: right ease-in-out 1s;
@@ -81,10 +83,10 @@ import AccentButton from './AccentButton.vue'
         right: -20px;
       }
     }
+
     &-planet-3 {
       right: 145px;
       top: 366px;
-
       transition: transform ease-in-out 1s;
 
       &:hover {

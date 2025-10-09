@@ -46,6 +46,7 @@ import SocialIcon from './SocialIcon.vue'
 
   &__title {
     @include font($size: 80px, $weight: 900);
+
     letter-spacing: -2%;
     line-height: 65%;
   }

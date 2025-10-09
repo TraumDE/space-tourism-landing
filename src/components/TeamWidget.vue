@@ -79,10 +79,12 @@ const team = ref<Team[]>([
   &__list-item {
     &:first-child {
       @include font(var(--accent-color), $size: inherit, $weight: 700);
+
       background: var(--main-gradient);
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
     line-height: 200%;
     text-wrap: nowrap;
   }
@@ -96,8 +98,9 @@ const team = ref<Team[]>([
   }
 
   &__card-name {
-    padding-top: 19px;
     @include font($weight: 500);
+
+    padding-top: 19px;
   }
 
   &__card-position {
