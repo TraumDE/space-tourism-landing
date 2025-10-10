@@ -78,11 +78,7 @@ const team = ref<Team[]>([
 
   &__list-item {
     &:first-child {
-      @include font(var(--accent-color), $size: inherit, $weight: 700);
-
-      background: var(--main-gradient);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradient-font($size: inherit, $weight: 700);
     }
 
     line-height: 200%;

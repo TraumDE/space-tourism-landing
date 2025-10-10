@@ -6,3 +6,17 @@
     #{$family},
     sans-serif;
 }
+
+@mixin gradient-font(
+  $gradient: var(--main-gradient),
+  $defaultColor: var(--accent-color),
+  $size: 16px,
+  $weight: 400,
+  $family: 'Figtree'
+) {
+  @include font(#{$defaultColor}, #{$size}, #{$weight}, #{$family});
+
+  background: #{$gradient};
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
