@@ -4,6 +4,7 @@ import type { OfferCard } from '@/types'
 const props = defineProps<OfferCard>()
 
 const formatPrice = (price: number): string => {
+  
   const userLocale: string = navigator.language
   const formatter: Intl.NumberFormat = new Intl.NumberFormat(userLocale, {
     style: 'currency',

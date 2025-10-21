@@ -79,6 +79,7 @@ const offerCards = ref<OfferCard[]>([
 
 .offers {
   padding-top: 120px;
+
   &__kicker {
     @include gradient-font($size: 20px, $weight: 500);
   }

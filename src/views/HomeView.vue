@@ -6,6 +6,7 @@ import BookWidget from '@/components/BookWidget.vue'
 import GuideWidget from '@/components/GuideWidget.vue'
 import TeamWidget from '@/components/TeamWidget.vue'
 import OffersWidget from '@/components/OffersWidget.vue'
+import EssentialsWidget from '@/components/EssentialsWidget.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import OffersWidget from '@/components/OffersWidget.vue'
     <ProsWidget></ProsWidget>
     <TeamWidget></TeamWidget>
     <OffersWidget></OffersWidget>
+    <EssentialsWidget></EssentialsWidget>
     <GuideWidget></GuideWidget>
     <BookWidget></BookWidget>
   </main>
@@ -22,6 +24,6 @@ import OffersWidget from '@/components/OffersWidget.vue'
 
 <style lang="scss" scoped>
 .main {
-  margin-left: 142px;
+  margin-inline: 120px auto;
 }
 </style>
