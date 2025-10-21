@@ -9,7 +9,7 @@ const offerCards = ref<OfferCard[]>([
   {
     title: 'Suborbital Flight',
     price: 500000,
-    image: '/tourism-landing/images/offer-1.webp',
+    image: '/images/offer-1.webp',
     time: {
       value: 1,
       timeUnit: 'hour',
@@ -18,7 +18,7 @@ const offerCards = ref<OfferCard[]>([
   {
     title: 'Orbital Adventure',
     price: 2000000,
-    image: '/tourism-landing/images/offer-2.webp',
+    image: '/images/offer-2.webp',
     time: {
       value: 3,
       timeUnit: 'days',
@@ -27,7 +27,7 @@ const offerCards = ref<OfferCard[]>([
   {
     title: 'Moon Landing',
     price: 5000000,
-    image: '/tourism-landing/images/offer-3.webp',
+    image: '/images/offer-3.webp',
     time: {
       value: 7,
       timeUnit: 'days',
@@ -35,7 +35,7 @@ const offerCards = ref<OfferCard[]>([
   },
   {
     title: 'Suborbital Flight',
-    image: '/tourism-landing/images/offer-4.webp',
+    image: '/images/offer-4.webp',
     price: 9000000,
     time: {
       value: 8,
@@ -45,7 +45,7 @@ const offerCards = ref<OfferCard[]>([
   {
     title: 'Comet Chase Expedition',
     price: 12000000,
-    image: '/tourism-landing/images/offer-5.webp',
+    image: '/images/offer-5.webp',
     time: {
       value: 12,
       timeUnit: 'days',

@@ -2,6 +2,8 @@
 import SecondaryButton from './SecondaryButton.vue'
 import ArrowRightIcon from './icons/ArrowRightIcon.vue'
 
+import formatBasePath from '@/utils/formatBasePath'
+
 import type { EssentialsItem } from '@/types'
 
 interface Props extends EssentialsItem {
@@ -14,7 +16,7 @@ const props = defineProps<Props>()
 <template>
   <section class="essentials__section">
     <div class="essentials__section-image-container">
-      <img class="essentials__section-image" :src="props.image" alt="" />
+      <img class="essentials__section-image" :src="formatBasePath(props.image)" alt="" />
     </div>
     <div class="essentials__section-main">
       <span class="essentials__section-number">0{{ props.id + 1 }}</span>

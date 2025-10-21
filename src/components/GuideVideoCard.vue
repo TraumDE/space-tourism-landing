@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import PlayIcon from './icons/PlayIcon.vue'
 
+import formatBasePath from '@/utils/formatBasePath'
+
 import type { VideoCard } from '@/types/videoCard'
 
 const props = defineProps<VideoCard>()
@@ -9,7 +11,7 @@ const props = defineProps<VideoCard>()
 <template>
   <div class="guide__card">
     <div
-      :style="{ 'background-image': `url(/tourism-landing${props.image})` }"
+      :style="{ 'background-image': `url(${formatBasePath(props.image)})` }"
       class="guide__card-main"
     >
       <button class="guide__card-play">

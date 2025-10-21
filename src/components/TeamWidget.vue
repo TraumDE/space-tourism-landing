@@ -1,33 +1,35 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 
+import formatBasePath from '@/utils/formatBasePath'
+
 import type { Team } from '@/types'
 
 const team = ref<Team[]>([
   {
     name: 'Zylan Vexor',
     position: 'Galactic Travel Director',
-    image: '/tourism-landing/images/team-1.webp',
+    image: '/images/team-1.webp',
   },
   {
     name: "Threxis N'alor",
     position: 'Zero Gravity Specialist',
-    image: '/tourism-landing/images/team-2.webp',
+    image: '/images/team-2.webp',
   },
   {
     name: "Xylozar K'thar",
     position: 'Cosmic Expedition Leader',
-    image: '/tourism-landing/images/team-3.webp',
+    image: '/images/team-3.webp',
   },
   {
     name: 'Virok Tal’mor',
     position: 'Celestial Events Coordinator',
-    image: '/tourism-landing/images/team-4.webp',
+    image: '/images/team-4.webp',
   },
   {
     name: "Zarathis Or'dan",
     position: 'Astro-Adventurer Consultant',
-    image: '/tourism-landing/images/team-5.webp',
+    image: '/images/team-5.webp',
   },
 ])
 </script>
@@ -43,8 +45,8 @@ const team = ref<Team[]>([
         </li>
       </ul>
       <div class="team__cards">
-        <figure class="team__card" v-for="member in team" :key="member.image">
-          <img :src="member.image" :alt="member.name" />
+        <figure class="team__card" v-for="(member, index) in team" :key="index">
+          <img :src="formatBasePath(member.image)" :alt="member.name" />
           <figcaption>
             <h3 class="team__card-name">{{ member.name }}</h3>
             <p class="team__card-position">{{ member.position }}</p>
